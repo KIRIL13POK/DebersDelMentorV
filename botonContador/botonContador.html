@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boton Contador</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="h1">
+            <h1> Boton Contador </h1>
+        </div>
+        <div id="h2">
+            <h2>
+                Creamos una pantalla de contador en el HTML con la etiqueta <h3> y le asignamos un id counter-label para
+                    que pueda actualizarse desde el código javascript mediante el document.getElementById() función en
+                    JS. <br>
+                    En el HTML, también agregamos un par de botones. Un botón con el texto Click Me, que al hacer clic
+                    aumenta el valor del contador en 1. Del mismo modo, en el otro botón, tenemos un texto Restablecer
+                    en el HTML que restablecerá el contador a 0. <br>
+                    Al hacer clic en el botón click me, debemos incrementar el valor del contador. Para eso, usamos el
+                    detector de eventos onclick. Y active la función incrementClick() con el clic del botón Haga clic en
+                    mí.
+                    Dentro de la función incrementClick(), incrementamos la variable global counterVal en 1 y llamamos a
+                    la función updateDisplay. <br>
+                    Al hacer clic en el botón Reset, llamamos a la función resetCounter(). En esta función restablecemos
+                    el valor del contador global (counterVal) a 0 y llamamos a la función updateDisplay(). <br>
+                    En la función updateDisplay() mostramos el valor que recibe como parámetro, en la etiqueta h3 que
+                    contiene el valor del contador. Utiliza la función document.getElementById() de javascript para
+                    consultar el elemento HTML con id counter-label y luego actualiza el atributo innerHTML con el nuevo
+                    valor del contador. El atributo innerHTML cambia aún más el texto que se muestra en la interfaz GUI
+                    HTML. <br>
+                    El ejemplo de código anterior muestra el contador de clics y lo incrementa al hacer clic en un
+                    botón. En la mayoría de los casos de uso, es posible que no apliquemos el contador de clics siempre
+                    en un botón. Para hacerlo flexible, tendremos que admitir la función para otros elementos HTML como
+                    div, li, etc. Casi todos los elementos HTML tienen el evento click con el controlador de eventos
+                    onclick.
+
+            </h2>
+        </div>
+        <div id="h3">
+            <h3>
+                <center>JavaScript Click Counter</center>
+            </h3>
+            <div>
+                <center>
+                    <h3 id="counter-label">0</h3>
+                </center>
+            </div>
+            <center>
+                <div>
+                    <button onclick="incrementClick()">Click Me</button>
+                    <button onclick="resetCounter()">Reset</button>
+                </div>
+            </center>
+
+        </div>
+    </header>
+    <script type="text/javascript" src="botonCnontador.js"> </script>
+
+</body>
+
+</html>

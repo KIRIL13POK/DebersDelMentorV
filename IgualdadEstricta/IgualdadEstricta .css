@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Bangers-Regular;
+    src: url(../../JavaScript_Victor_Robles/Fonts/Bangers/Bangers-Regular.ttf);
+}
+
+@font-face {
+    font-family: Varela_Round;
+    src: url(../../JavaScript_Victor_Robles/Fonts/Varela_Round/VarelaRound-Regular.ttf);
+}
+
+#fondo {
+    background-color: darkgrey;
+}
+
+#h1 {
+    border: solid 5px white;
+    background-color: black;
+    text-align: center;
+    color: red;
+    font-family: Bangers-Regular;
+    
+
+}
+
+#p {
+    color: darkgrey  ;
+    border: solid 5px white;
+    background-color: black;
+    text-align: center;
+    color: red;
+    font-family: Varela_Round;
+}
+#img{
+    border: solid 5%  darkgrey ;
+}
+ul{
+    text-align: left;
+}
+h2{
+    font-family: Bangers-Regular;
+}
